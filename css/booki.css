@@ -1,0 +1,1033 @@
+* {
+    box-sizing: border-box;
+   /* box-sizing est appliqué à tous les éléments */
+   }
+
+
+
+/* body */
+
+body {
+    margin: 0px;
+    font-family: 'Ralewaysemibold';
+}
+
+body p {
+    font-family: 'Ralewaylight';
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: 'Ralewaylight';
+    src: url('Raleway/static/Raleway-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Ralewaysemibold';
+    src: url('Raleway/static/Raleway-SemiBold.ttf');
+}
+
+
+
+
+/* header */
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    margin: 0% 4% 0% 4%;
+}
+
+nav img
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 70px;
+}
+
+nav ul 
+{   
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 0px;
+    width: 260px; 
+}
+
+nav li
+{
+    width: fit-content;
+}
+
+nav a
+{   
+    width: fit-content;
+    color: black;
+    font-family: 'Ralewaylight';
+    text-decoration: none;
+    padding: 0px 19px 0px 19px;
+}
+
+nav a:hover
+{   
+    width: fit-content;
+    color: blue;
+    text-decoration: none;
+    border-top: 3px solid blue;
+    padding-top: 47px;
+}
+
+
+
+/* Div */
+
+#sousheader-Div
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+}
+
+h1
+{
+    margin-bottom: 0px;
+}
+
+#psoush1-Div
+{
+    margin-top: 5px;
+}
+
+form
+{
+    flex-direction: row;
+    margin-top: 0px;
+    padding-left: 0%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-map-marker-alt
+{
+    padding: 16px 17px 16px 17px;
+    border-radius: 12px 0px 0px 12px;
+    font-size: 20px;
+    background-color: #F2F2F2;
+    margin: 0px;
+
+}
+
+#search-input
+{
+    /*border: solid 1px red;*/
+    height: 50px;
+    font-size: 20px;
+    border-radius: 0px;
+    border: 1px solid #DEEBFF;
+    border-left: hidden;
+    border-right: hidden;
+    color: black;
+    margin-left: -4px;
+    padding-left: 15px;
+    /*padding: 20px 10px; line-height: 28px;*/
+}
+
+#search-input:hover
+{
+    cursor: pointer;
+}
+
+#search-bar
+{
+   border: hidden;
+   color: white;
+   background: #0065FC;
+   border-radius: 0 12px 12px 0;
+   font-size: 20px;
+   height: 50px;
+   width: 150px;
+   font-weight: 600;
+   margin-left: -4px ;
+}
+
+.fa-magnifying-glass
+    {
+        visibility: hidden;
+    }
+
+#filter-Div1
+{
+    padding-left: 0px;
+    font-size: 20px;
+    margin-top: 10px ;
+}
+
+#filter-Div1 ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0px;
+    width: fit-content;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+
+#filter-Ul #filter-Li1
+{
+    padding: 0px;
+    margin-left: 0px;
+    border: hidden;
+    background: none;
+}
+
+#filter-Ul li
+{
+    border:solid 2px gainsboro;
+    padding-right: 25px;
+    border-radius: 28px;
+    border-left: hidden;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-weight:600;
+}
+
+#filter-Ul div
+{
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+#filter-Ul li:hover
+{
+    cursor: pointer;
+    background: greenyellow;
+}
+
+li i
+{
+    margin-right: 10px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+
+.fa-money-bill-wave
+{
+    padding: 13px 12px 13px 12px;
+    border-radius: 50px;
+    margin-left: -3px;
+}
+
+.fa-child
+{
+    padding: 13px 17px 13px 17px;
+    border-radius: 50px;
+    margin-left: -1px;
+}
+
+.fa-heart
+{
+    padding: 13px 14px 13px 14px;
+    border-radius: 50px;
+    margin-left: -1px;
+}
+
+.fa-dog
+{
+    padding: 13px 13px 13px 13px;
+    border-radius: 50px;
+    margin-left: -1px;
+        /*border: 1px solid greenyellow;*/
+}
+
+.psousfilterdiv1-Div
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-info
+{   
+    font-size: 15px;
+    color: #0065FC;
+    border: 1px solid gainsboro;
+    padding: 7px 12px 7px 12px;
+    /*padding: 10px 15px 10px 15px;*/
+    border-radius: 50px ;
+    margin-right: 10px;
+}
+
+
+
+/* section */
+
+section
+{
+    display: flex;
+}
+
+section article
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-top: 10px;
+    width: 70%;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #F2F2F2;
+}
+
+section article h2
+{
+    margin-left: 4%;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+section article div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 20px;
+    padding-left: 0px;  
+}
+
+section #cartehébergements-Articlediv1
+{
+    margin-bottom: 5px;
+}
+
+article div a
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    height: 260px;
+    width: 31.5%; 
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+    box-shadow: 3px 3px 8px gainsboro;
+}
+
+article div img
+{
+    image-rendering: auto;
+    height: 160px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    padding: 5px 5px 0px 5px;
+    object-fit: cover;
+}
+
+article div h3
+{
+    margin-left: 15px;
+    margin-top: 11px;
+    margin-bottom: 0px;
+    font-size: 17px;
+}
+
+section article div p
+{
+    margin-left: 15px;
+    margin-top: 11px;
+    margin-bottom: 0px;
+    font-family: 'Ralewaylight';
+    font-size: 16px;
+}
+
+section article div a div
+{
+    color: blue;
+    margin-left: 15px;
+    margin-top: 11px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    width: fit-content;
+}
+
+.fa-bleu
+{
+    color: #0065FC;
+    font-size: 13px;
+}
+
+.fa-gris
+{
+    color: gainsboro;
+    font-size: 13px;
+}
+
+#Afficherplus-ArticleSection
+{
+    font-family: 'Ralewaysemibold';
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    font-size: 20px;
+}
+
+
+
+/* section-Div-LesPlusPopulaires */
+
+section #lespluspopulaires-SectionDiv
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#lespluspopulaires-SectionDiv h2
+{
+    /* h2 écart sur border left*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 25px;
+    margin-right: 7%;
+    margin-left: 7%;
+}
+
+#lespluspopulaires-SectionDiv a
+{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 7%;
+    border-radius: 20px;
+    background: white;
+    margin-left: 7%;
+    box-shadow: 3px 3px 8px gainsboro;
+    text-decoration: none;
+    color: black;
+}
+
+#lespluspopulaires-SectionDiv #lespluspopulaires-SectionDivA2
+{
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+#lespluspopulaires-SectionDiv a img
+{
+    height: 170px;
+    width: 180px;
+    border-radius: 20px 0px 0px 20px;
+    padding: 5px 0px 5px 5px;
+    object-fit: cover;
+}
+
+#lespluspopulaires-SectionDiv #lespluspopulairesd-SectionDivADiv
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 40%;
+}
+
+#lespluspopulairesd-SectionDivADiv h3
+{
+    margin-bottom: 0px;
+    font-size: 18px;
+}   
+
+#lespluspopulairesd-SectionDivADiv p
+{
+    margin-top: 5px;  
+    margin-bottom: 0px;
+    font-size: 15px; 
+}
+
+
+#lespluspopulaires-SectionDiv #lespluspopulairesd-SectionDivADiv div
+{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+#lespluspopulairesd-SectionDivADiv div i
+{
+    margin-left: 0px;
+}
+
+
+
+/* Activités de Marseille */
+
+#Activités-Div
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 50px;
+    width: auto;
+}
+
+#Activités-Div h2
+{
+    font-size: 25px;
+}
+
+#Activités-Div div
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#Activités-Div a
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;  
+    margin-top: 0px;
+    box-shadow: 3px 3px 8px gainsboro;
+    width: 22.5%;
+    text-decoration: none;
+    color: black;
+}
+
+#Activités-Div a img
+{
+    border-radius: 25px 25px 0px 0px;
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#Activités-Div a h3
+{
+    margin-left: 20px;
+}
+
+
+/* Double cadre */
+
+#Activités-Div #double-cadre-ActivitésDivDiv
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    width: 22.5%;
+}
+
+#double-cadre-ActivitésDivDiv #cadre1-DoublecadreActivitésDivDivA
+{
+    width: auto;
+}
+
+#double-cadre-ActivitésDivDiv #cadre1-DoublecadreActivitésDivDivA img
+{
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#double-cadre-ActivitésDivDiv #cadre2-DoublecadreActivitésDivDivA
+{
+    margin-top: 50px;
+    width: auto;
+}
+
+#double-cadre-ActivitésDivDiv #cadre2-DoublecadreActivitésDivDivA img
+{
+    height: 120px;
+    object-fit: cover;
+}
+
+
+/* Doublecadre2 */
+
+#Activités-Div #doublecadre2-ActivitésDivDiv
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    width: 22.5%;
+}
+
+#Activités-Div #doublecadre2-ActivitésDivDiv a
+{
+    width: auto;
+}
+
+#doublecadre2-ActivitésDivDiv #cadre3-DoublecadreActivitésDivDivA img
+{
+    height: 170px;
+    object-fit: cover;
+}
+
+#doublecadre2-ActivitésDivDiv #cadre4-DoublecadreActivitésDivDivA
+{
+    margin-top: 50px;
+}
+
+#doublecadre2-ActivitésDivDiv #cadre4-DoublecadreActivitésDivDivA img
+{
+    height: 170px;
+    object-fit: cover;
+}
+
+
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    margin-top: 50px;
+    width: auto;
+    background: #F2F2F2;
+}
+
+footer div
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+#div2-footer
+{
+    margin: 28px 19% 0% 19%;
+
+}
+
+
+footer div h2
+{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer div ul
+{
+    margin: 0px;
+    padding-left: 0px;
+    list-style: none;
+    font-family: "Ralewaylight";
+}
+
+footer div ul li
+{
+    margin-top: 12px;
+}
+
+footer div ul li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* header Version Tablette */
+
+@media all and (max-width: 767px)
+{
+    body p
+    {
+        /*font-size: 20px;*/
+    }
+
+
+
+    /* Header */
+
+    nav
+    {
+        flex-direction: column;
+        height: auto;
+        margin: 0% 0% 0% 0%;
+    }
+
+    nav img
+    {
+        
+        padding-left: 50px;
+    }
+
+    nav ul
+    {
+        
+        width: 100%;
+        border-bottom: 3px solid gainsboro;
+        /*font-size: 50Px;*/
+    }
+
+    nav ul li
+    {
+        width: 50%;
+    }
+
+    nav a
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+        width: 100%;
+        font-size: 17px;
+    }
+
+    nav a:hover 
+    {
+        border-bottom: blue solid 3px;
+        border-top: none;
+        width: 100%;
+        color: blue;
+        text-decoration: none;
+        padding-top: 0px;
+    }
+
+
+
+    /* SousHearder */
+
+    #sousheader-Div
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+     h1
+    {
+        font-size: 26px;
+    }
+
+    #psoush1-Div
+    {
+        margin-top: 15px;
+        font-size: 18px;
+        margin-bottom: 30px;
+
+    }
+
+    form
+    {
+        display: flex;
+        width: 100%;
+        border-radius: 15px;
+        border-bottom: 1px solid #F2F2F2;
+        border-top: 1px solid #F2F2F2;
+    }
+
+    .fa-map-marker-alt
+    {
+    }
+
+    #search-input
+    {
+        width: 80%;
+        border: none;
+    }
+
+    #search-bar
+    {
+        display: none;
+
+    }
+
+    .fa-magnifying-glass
+    {
+        background-color: #0065FC;
+        color: white;
+        font-size: 20px;
+        padding: 15px 15px 15.5px 15px;
+        border-radius: 15px;
+        visibility: visible;
+    }
+
+    #filter-Div1
+    {
+        font-size: 17px;
+        /*font-size: 60px;*/
+        margin-top: 30px;
+    }
+
+    #filter-Div1 #filter-Ul
+    {
+        flex-direction: column;
+        align-items: unset;
+        width: 100%;
+    }
+
+    #filter-Ul #filter-Li1
+    {
+    }
+
+    #filter-Ul div
+    {
+        justify-content: space-between;
+    }
+
+    #filter-Ul li
+    {
+        margin-left:  0px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+
+    #sousheader-Div #psousfilterdiv1-Div
+    {
+        font-size: 12px;
+    }
+
+
+
+    /* Section */
+
+    section
+    {
+        flex-direction: column-reverse;
+    }
+
+    section article
+    {
+        width: 100%;
+        margin-left: 0px;
+        background-color: white;
+    }
+
+    section article h2
+    {
+        /*font-size: 50px;*/
+    }
+
+    section article  #cartehébergements-Articlediv1
+    {
+        flex-direction: column;
+    }
+
+    section article #cartehébergements-Articlediv2
+    {
+        flex-direction: column;
+    }
+
+    article div a
+    {
+        height: 217px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    article div img
+    {
+        height: 125px;
+    }
+
+    article div h3
+    {
+        /*font-size: 35px;*/
+    }
+
+    section article div p
+    {
+        /*font-size: 30px;*/
+    }
+
+    section article div a div
+    {
+        font-size: 13px;
+    }
+
+    .fa-bleu
+    {
+        font-size: 13px
+    }
+
+    .fa-gris
+    {
+        font-size: 13px
+    }
+
+    section article p
+    {
+        /*font-size: 40px;*/
+    }
+
+    section #lespluspopulaires-SectionDiv
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+        border-radius: 0px;
+    }
+
+    /*section les populaires */
+    section #lespluspopulaires-SectionDiv h2
+    {
+        /*font-size: 20px;*/
+        background: #F2F2F2;
+        border: red 1px solid;
+    }
+
+   /* .fa-chart-line
+    {
+
+        border: red 1px solid;
+        margin-left: 10px;
+    }*/
+
+    #lespluspopulaires-SectionDiv a img
+    {
+        /*height: 300px;*/
+        width: 150px;
+    }
+
+    #lespluspopulaires-SectionDiv a h3
+    {
+        /*font-size: 35px;*/
+    }    
+
+    #lespluspopulaires-SectionDiv a p
+    {
+        /*font-size: 30px;*/
+    } 
+    
+    #lespluspopulaires-SectionDiv a i
+    {
+        font-size: 12px;
+    }
+
+
+    /* Activity */ 
+
+    #Activités-Div div
+    {
+        flex-direction: column;
+    }
+
+    #Activités-Div h2
+    {
+        /*font-size: 25px;*/
+    }
+
+    #Activités-Div a
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #Activités-Div a img
+    {
+        height: 157px;
+    }
+
+    #Activités-Div a h3
+    {
+        /*font-size: 35px;*/
+    }
+
+    #Activités-Div #double-cadre-ActivitésDivDiv
+    {
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    #double-cadre-ActivitésDivDiv #cadre1-DoublecadreActivitésDivDivA
+    {
+        margin-bottom: 0px;
+    }
+
+    #double-cadre-ActivitésDivDiv #cadre1-DoublecadreActivitésDivDivA img
+    {
+        height: 160px;
+    }
+
+    #double-cadre-ActivitésDivDiv #cadre2-DoublecadreActivitésDivDivA img
+    {
+        height: 160px;
+    }
+
+    #Activités-Div #doublecadre2-ActivitésDivDiv
+    {
+        width: 100%;
+    }
+
+    #doublecadre2-ActivitésDivDiv #cadre3-DoublecadreActivitésDivDivA img
+    {
+        height: 160px;
+    }
+
+    #doublecadre2-ActivitésDivDiv #cadre3-DoublecadreActivitésDivDivA
+    {
+        margin-bottom: 0px;
+    }
+
+    #doublecadre2-ActivitésDivDiv #cadre4-DoublecadreActivitésDivDivA img
+    {
+        height: 160px;
+    }
+
+
+
+    /* Footer */
+
+    footer
+    {
+        flex-direction: column;
+    }
+
+    footer div h2
+    {
+        font-size: 20px;
+    }
+
+    footer div
+    {
+        margin-left: 7%;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    #div2-footer
+    {
+        margin: -10px 0% 0px 7%;
+    }
+
+    footer a
+    {
+        font-size: 18px;
+    }
+
+    footer div
+    {
+
+    }
+}
